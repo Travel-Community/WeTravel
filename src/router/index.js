@@ -1,17 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 import ShareExperience from "../views/ShareExperience.vue";
-
+import Home from "../views/Home.vue";
 const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
   {
     path: "/shareexperience",
     name: "ShareExperience",
     component: ShareExperience,
+  },
+  {
+    path: "/",
+    name: "Home",
+    component: Home,
   },
 ];
 
