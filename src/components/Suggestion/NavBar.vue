@@ -3,21 +3,19 @@
   <div class="nav sh1">
       <div>
           <router-link :to="{name:'Home'}">
-        <img class="logo-nav" src="../../assets/logo-nav.png" alt="">
-
+            <img class="logo-nav" src="../../assets/logo-nav.png" alt="">
           </router-link>
-
       </div>
-      
-    <div class="text-wrapper" >
-      <router-link :to="{name:'Suggestion'}"><h3>Suggestion</h3></router-link>
+    <div class="text-wrapper">
+      <h3>Suggestion</h3>
       <h3>Event</h3>
-      <router-link :to="{name:'ShareExperience'}"><h3>Share Experience</h3></router-link>
-      
+      <h3>Share Experience</h3>
     </div>
+    <router-view/>
+
     <div class="profile-wrapper">
-      <button>Register</button>
-      <button><fa icon="question-circle"/> Help</button>
+      <img src="../../assets/jasmineRose.png" alt="">
+      <p>Jasmine Rose</p>
     </div>
    </div>
    
@@ -31,10 +29,12 @@ export default {
 </script>
 
 <style  scoped>
+
 .nav{
 display: flex;
 justify-content: space-between;
 height: 60px;
+left: 0px;
 }
 .logo-nav{
   width: 170px;
@@ -54,18 +54,23 @@ height: 60px;
     display: flex;
     justify-content: space-between;
     margin-right:30px ;
-    margin-top:15px ;
+    margin-top: 5px;
 }
 
-button{
-  color: white;
-  background-color: #41B3A3;
-  border-style: none;
-  border-radius: 5px;
-  width: 60px;
-  height: 30px;
-}
 
+.profile-wrapper>p{
+    margin-top: 20px;
+
+}
+.text-wrapper 
+   
+    h3.router-link-exact-active {
+       font-weight: bold;
+    color: #2c3e50;
+
+      color: #42b983;
+    }
+  
 
 </style>
 
