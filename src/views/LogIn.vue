@@ -18,12 +18,13 @@
             </div>
             <p class="login-with">or login with</p>
             <div class="login-more">
-                <img class="more" src="../assets/google-plus.svg"  alt="Too">
-                
+                <img class="more-ggl" src="../assets/google-plus.svg"  alt="Too">
+                <img class="more-fb" src="../assets/facebooks.png"  alt="Too">
             </div>
             
         </div>
-        
+        <p class="or" >or</p>
+        <h4 class="register">Register?</h4>
     </div>
     
 </template>
@@ -42,6 +43,7 @@ export default {
     border-radius: 20px;
     border:1px solid #41B3A3;
     margin: auto;
+    box-shadow: 1px 3px 6px #929292;
 }
 .logo {
     margin-top: 5%;
@@ -99,7 +101,29 @@ export default {
     margin-top: 20px;
     font-size: 13px;
 }
+.login-more {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.more-ggl {
+    width: 30px;
+}
+.more-fb {
+    width: 30px;
+    margin-left: 10px;
+}
 
+.or {
+    text-align: center;
+    margin: 15px;
+    font-size: 14px;
+}
+.register {
+    color: rgb(49, 116, 241);
+    text-align: center;
+    font-size: 18px;
+}
 
 
 
