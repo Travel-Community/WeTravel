@@ -16,7 +16,7 @@
       
     </div>
     <div class="profile-wrapper">
-      <button>Register</button>
+      <router-link :to="{name:'LogIn'}"><button>Register</button></router-link>
       <button><fa icon="question-circle"/> Help</button>
     </div>
    </div>

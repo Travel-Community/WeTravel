@@ -2,7 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import ShareExperience from "../views/ShareExperience.vue";
 import Suggestion from "../views/Suggestion.vue"
 import Home from "../views/Home.vue";
+import LogIn from "../views/LogIn.vue"
 const routes = [
+  { 
+    path: "/login",
+    name: "LogIn",
+    component: LogIn
+  },
   {
     path: "/suggestion",
     name: "Suggestion",
