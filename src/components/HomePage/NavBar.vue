@@ -11,7 +11,7 @@
       
     <div class="text-wrapper" >
       <router-link :to="{name:'Suggestion'}"><h3>Suggestion</h3></router-link>
-      <h3>Event</h3>
+      <router-link :to="{name:'Event'}"><h3>Event</h3></router-link> 
       <router-link :to="{name:'ShareExperience'}"><h3>Share Experience</h3></router-link>
       
     </div>
@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style lang="scss"  scoped>
 .nav{
 display: flex;
 justify-content: space-between;

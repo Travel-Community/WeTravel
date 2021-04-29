@@ -3,7 +3,7 @@
         
         <div class="post">
             <div class="profile-wrapper">
-            <img class="profile" src="../../assets/jasmineRose.png" alt="">
+                <img class="profile" src="../../assets/chantevy.png" alt="">
                 <p class="name">Sok Chantevy</p>  
             </div>  
             <div >
@@ -42,6 +42,7 @@ export default {
 .profile-wrapper{
     display: flex;
     align-items: center;
+    margin-bottom:5px ;
 }
 .name{
     margin-left: 5px;
@@ -70,9 +71,8 @@ height: 22px;
 }
 .post{
     width: 365px;
+    margin-top:40px;
 }
-/* .post-wrapper{
-    margin-left: 100px;
-} */
+
 </style>>
 

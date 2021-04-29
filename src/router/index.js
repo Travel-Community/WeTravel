@@ -1,24 +1,24 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ShareExperience from "../views/ShareExperience.vue";
-import Suggestion from "../views/Suggestion.vue"
+import Suggestion from "../views/Suggestion.vue";
 import Home from "../views/Home.vue";
-import LogIn from "../views/LogIn.vue"
+import LogIn from "../views/LogIn.vue";
 import Event from "../views/Event.vue";
 import profile from "../views/profile.vue";
 const routes = [
-  { 
+  {
     path: "/login",
     name: "LogIn",
-    component: LogIn
+    component: LogIn,
   },
   {
     path: "/suggestion",
     name: "Suggestion",
-    component: Suggestion
+    component: Suggestion,
   },
 
   {
-    path: "/shareexperience",
+    path: "/share-experience",
     name: "ShareExperience",
     component: ShareExperience,
   },
@@ -34,7 +34,7 @@ const routes = [
   },
   {
     path: "/profile",
-    name: "profile",
+    name: "Profile",
     component: profile,
   },
 ];

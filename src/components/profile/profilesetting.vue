@@ -1,132 +1,158 @@
 <template>
-    <div class="container">
-     <img class="profile" src="../../assets/profile_men2.jpeg" alt="">
-        <button class="btn-edit">Edit Profile</button>
-      <div class="element-wrapper">
-        <h1>Profile Setting</h1>
-        <div class="element">
-          <div class="input-groups">
-              <label for="text"> First Name : </label>
-              <input type="text" id="create-date" name="text">
-            </div>
-            <div class="input-groups">
-              <label for="text"> Surname : </label>
-              <input type="text" id="create-date" name="text">
-            </div>
-            <div class="input-groups">
-              <label for="text"> Sex : </label>
-              <input type="text" id="create-date" name="text">
-            </div>
-            <div class="input-groups">
-              <label for="text"> Email Address : </label>
-              <input type="text" id="create-date" name="text">
-            </div>
-            <div class="input-groups">
-              <label for="text"> Telephone : </label>
-              <input type="text" id="create-date" name="number">
-            </div>
-              <div class="input-groups">
-              <label for="date">  Date of Birth : </label>
-              <input type="date" id="birth" name="date">
-            </div>
-            <div class="action-wrapper">
-            <button type="submit" id="btn-edit" class="btn btn-success">Edit</button>
-            <button type="button" id="btn-delete" class="btn">Delete Account</button>
-          </div>
-        </div>
+<w-app>
+
+<w-flex align-center justify-center >
+  <div class="profile-wrapper sh3">
+    <w-flex justify-end>
+      <div class="profile-img">
+        <w-flex column align-center justify-space-between>
+            <span>
+            <img src="../../assets/profileSetting.png" alt="">
+          </span>
+          <span>
+              <button class="edit-btn">Edit Picture</button>
+          </span>
+        </w-flex>
       </div>
+          <div class="profile-setting">
+            <div class="profile-setting-wrapper">
 
-    </div>
+              <h1>Profile Setting</h1>
+                <div class="name-wrapper">
+                  <span>
+                      <h4>First Name:</h4>
+                    <input type="text" placeholder="Jasmine">
+                  </span>
+                  <span>
+                      <h4>Surname:</h4>
+                      <input type="text" placeholder="Rose">
+                  </span>
+                </div>
 
+                <div class="name-wrapper">
+                  <span>
+                      <h4>Date of Birth:</h4>
+                    <input type="text" placeholder="20 Mar 2000">
+                  </span>
+                  <span>
+                      <h4>Sex:</h4>
+                      <input type="text" placeholder="Female">
+                  </span>
+                </div>
+
+                <div class="telephone-wrapper">
+                  <span>
+                    <h4>Telephone:</h4>
+                    <input type="text" placeholder="012345678">
+                  </span>
+                </div>
+
+                <div class="email-wrapper">
+                  <span>
+                    <h4>Email Address:</h4>
+                    <input type="text" placeholder="jasminerose@gmail.com">
+                  </span>
+                </div>
+
+                <div class="btn-wrapper">
+                  <button>Edit</button>
+                  <button>Delete</button>
+                </div>
+             </div>
+
+        </div>
+    </w-flex>
+    
+  </div>
+</w-flex>
+ </w-app>
 
 </template>
+
 <script>
 export default {
 
 }
 </script>
+
 <style scoped>
 
-.container{
-  display: flex;
-  border: 5px;
-  background-color: skyblue;
-  width: 1000px;
-  margin: 200px 60px;
-  padding: 200px 60px;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
-  
-  
+.wrapper{
+  float: center;
 }
-.profile{
-  
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  margin: 0 52px;
-  
-}
-.btn-edit{
-  position: absolute ;
-  margin: 210px 90px;
-  padding: 6px 20px;
-  border: 1px solid skyblue;
-  border-radius: 5px;
-} 
-.element-wrapper{
+  .profile-wrapper{
+    width: 950px;
+    height: 560px;
+    background-color: #41B3A3;
+    border-radius: 20px;
+  }
+  .profile-img{
+    margin-right:110px ;
+    margin-top:130px ;
+  }
+  .edit-btn{
+    width: 133px;
+    height: 29px;
+    border-radius: 15px;
+    margin-top:10px ;
+    border-style:none ;
 
-  background-color: white;
-  margin: -200px 25px;
-  padding-right: 55px;
-  padding-left: 20px;
+  }
+  .profile-setting{
+    width: 550px;
+   height: 560px;
+   background-color: white;
+   border-radius: 20px;
+  }
+.profile-setting-wrapper{
+  margin:50px ;
+}
+  
+ .name-wrapper,.telephone-wrapper{
+   display: flex;
+   justify-content: space-between;
+   margin-top:30px ;
+ }
+ .email-wrapper,.btn-wrapper{
+      margin-top:30px ;
+
+ }
+ .name-wrapper>span>input,.telephone-wrapper>span>input{
+   width: 205px;
+   height: 34px;
+   border-radius:10px ;
+   border:1px solid #41B3A3;
+   text-align: center;
+ }
+ .email-wrapper>span>input{
+   width: 455px;
+   height: 34px;
+   border-radius:10px ;
+   border:1px solid #41B3A3;
+   text-align: center;
+ }
+ .btn-wrapper{
+   display: flex;
+   justify-content: space-between;
+   width: 216px;
+   height: 26px;
+   float:right ;
+ }
+ .btn-wrapper>button:nth-child(1){
+   width: 97px;
+   height: 29px;
+   background-color: #41B3A3;
+   color: white;
+   border-style:none ;
+   border-radius:10px ;
+ }
+ .btn-wrapper>button{
+  background: #BB3737;
   border-radius: 10px;
+  width: 109px;
+  height: 29px;
+  color: white;
+  border-style:none ;
 
-
-}
-#create-date{
-  padding: 15px 250px;
-  text-align: left;
-  margin-bottom: 5px;
- 
-  border: 1px solid skyblue;
-  
-}
-#birth{
-  padding : 13px 255px;
-  text-align: left;
-  margin-bottom: 5px;
-  border: 1px solid skyblue;
-}
-.action-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  margin-right: 20px;
-    margin-top: 25px;
-    text-align: right ;
-  }
-.btn {
-    background-color: rgb(233, 59, 59);
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-    border-radius: 6px;
-  }
-  
-  .btn:hover {
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.75);
-    opacity: 0.8;
-  }
-  
-  .btn:active {
-    transform: scale(0.7);
-  }
-  
-  .btn.btn-success {
-    background-color: skyblue;
-    color: white;
-  }
-  
+   }
 </style>

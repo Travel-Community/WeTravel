@@ -54,6 +54,7 @@ height: 22px;
 }
 .post{
     width: 365px;
+    margin-top: 40px;
 }
 .box {
     width: 278px;
